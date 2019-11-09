@@ -52,7 +52,7 @@ function fun(ID)
 			$("#Text4").text("");
 			$("#Text5").text("ENHANCED BOONS");
 			$('#Text6').html("<strong>Income:</strong> If the gang also controls one of the Linked Rackets, the gang gains 2D6x10 credits when they collect Income.");
-			$('#Text7').html('<strong>Income:</strong> If the gang also controls one of the Linked Rackets, the gang gains 3D6x10 credits when they collect Income.');
+			$('#Text7').html('<strong>Income:</strong> If the gang also controls both of the Linked Rackets, the gang gains 3D6x10 credits when they collect Income.');
 			$("#Text8").text("");
 			break;
 		case "b6":
