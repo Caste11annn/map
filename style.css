@@ -1,0 +1,190 @@
+/* CSS Document */
+@import url(//db.onlinewebfonts.com/c/56c2687f1ffe02428417ed3d2b0bfb35?family=RedeyeSansW00-Bold);
+
+@font-face {font-family: "RedeyeSansW00-Bold"; src: url("//db.onlinewebfonts.com/t/56c2687f1ffe02428417ed3d2b0bfb35.eot"); src: 
+	url("//db.onlinewebfonts.com/t/56c2687f1ffe02428417ed3d2b0bfb35.eot?#iefix") format("embedded-opentype"), 
+	url("//db.onlinewebfonts.com/t/56c2687f1ffe02428417ed3d2b0bfb35.woff2") format("woff2"), 
+	url("//db.onlinewebfonts.com/t/56c2687f1ffe02428417ed3d2b0bfb35.woff") format("woff"), 
+	url("//db.onlinewebfonts.com/t/56c2687f1ffe02428417ed3d2b0bfb35.ttf") format("truetype"), 
+	url("//db.onlinewebfonts.com/t/56c2687f1ffe02428417ed3d2b0bfb35.svg#RedeyeSansW00-Bold") format("svg"); 
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #1D1D1D;
+	background-size: cover;
+	background-image: url(bg1.png);
+}
+h1{
+	font-size: 40px;
+	font-family: 'RedeyeSansW00-Bold', Impact;
+}
+h2{
+	color: #542218;
+	font-family: 'Times New Roman';
+}
+p.info{
+	font-family:'Arial';
+}
+.logo{
+	fill: white;
+	fill-opacity: 0.2;
+	transform: matrix(0.45,0.00,0.00,0.45,545,795);
+}
+g.logo:hover{
+	fill-opacity: 0.1;
+}
+.st0{fill: white;}
+.st2{fill:#020608;}
+.st3{font-family: 'RedeyeSansW00-Bold', Impact;}
+.st4{font-size:9.839px;} /*9.839px*/
+.st5{fill:#EEE660;} 
+.st6{font-size:5.3295px;} /*5.3295px*/
+.st7{fill:#A52A2A;} /*KIRILL (CAWDOR)*/
+.st8{fill:#FFA500;} /*MISHA (VAN SAAR)*/
+.st9{fill:#9ACD32;} /*GAMID (CAWDOR)*/
+.st10{fill:#008000;} /*KIRILL (GENESTEALER)*/
+.st11{fill:#0000FF;} /*PASHA (ORLOCK)*/
+.st12{fill:#800080;} /*NIKITA (CHAOS)*/
+.st13{fill:#262626;} /*NIKITA (DELAQUE)*/
+.st14{fill:#808080;} /*GIYA (CHAOS)*/
+.st15{fill:#1F1F1F;} /*name-text-color*/
+.st16{font-size:8px;}
+a.stLock g text,
+a.stLock g path.swing{
+	fill-opacity: 0.2;
+}
+
+a.polyX:hover g polygon{
+	fill-opacity:0.8;
+	transition: fill-opacity 0.2s;
+}
+.players{
+	position: fixed;
+	width: 10%;
+	transform: translateX(900%);
+	
+}
+.bg-modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.bg-modal-overlay{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+}
+.modal-content{
+	width: 30%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 0%;
+	padding-bottom: 2%;
+	background-color: #FFF;
+	border-radius: 20px;
+	box-shadow: 0px 0px 100px 0px #000;
+	box-shadow: inset 0px 0px 50px 0px #595959;
+	position: relative;
+}
+a{
+	text-decoration: none;
+}
+.close{
+	position: absolute;
+	top: -10px;
+	right: 10px;
+	font-size: 75px;
+	transform: rotate(45deg);
+	font-family: 'RedeyeSansW00-Bold';
+	color: #1F1F1F;
+}
+.close:hover{
+	color: gray;
+}
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  30% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  40% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  50% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  65% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+a:hover .swing{
+	-webkit-animation: swing 0.6s ease;
+	animation: swing 0.6s ease;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+.move:hover{
+	transform: translateX(5px);
+	transition: transform 0.2s ease;
+}
+
+@media screen and (max-width: 1100px){
+	.modal-content{
+		width: 60%;
+	}
+}
+@media screen and (max-width: 620px){
+	.modal-content{
+		width: 80%;
+	}
+	.close{
+		transform: rotate(45deg) scale(0.8, -0.8);
+		top: -15px;
+		right: 5px;
+	}
+}
