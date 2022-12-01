@@ -169,7 +169,7 @@ a:hover .swing{
 	animation-iteration-count: 1;
 }
 .move:hover{
-	transform: translateX(5px);
+	transform: translateX(-2px);
 	transition: transform 0.2s ease;
 }
 
